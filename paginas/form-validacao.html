@@ -43,9 +43,30 @@
             <label for="campo-estrangeiro">Estrangeiro</label>
         </div>
 
+        <div>
+            <label for="campo-nota1">Nota 1</label>
+            <input type="number" step="0.50" id="campo-nota1" onblur="preencherCampoMedia()">
+        </div>
+
+        <div>
+            <label for="campo-nota2">Nota 2</label>
+            <input type="number" step="0.50" id="campo-nota2" onblur="preencherCampoMedia()">
+        </div>
+
+        <div>
+            <label for="campo-nota3">Nota 3</label>
+            <input type="number" step="0.50" id="campo-nota3" onblur="preencherCampoMedia()">
+        </div>
+
+        <div>
+            Média <span id="media-valor">0,00</span>
+        </div>
+
         <button type="button" onclick="limpar_campos()">Limpar campos</button>
         <button type="button" ondblclick="cadastrar()">Cadastrar (dois clicks)</button>
     </form>
 
+    <label for="campo-alunos">Alunos</label> <br>
+    <textarea id="campo-alunos" disabled readonly rows="40" cols="75"></textarea>
 </body>
 </html>
